@@ -6,8 +6,8 @@ class S3Storage:
     def __init__(self):
         self.s3_client = boto3.client(
             's3',
-            aws_access_key_id=Config.AWS_ACCESS_KEY_ID,
-            aws_secret_access_key=Config.AWS_SECRET_ACCESS_KEY,
+            aws_access_key_id="testid"
+            aws_secret_access_key="testid",
             region_name="us-east-1"
         )
         self.bucket_name = Config.S3_BUCKET_NAME
